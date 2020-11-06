@@ -11,9 +11,13 @@ html *, html *:after, html *:before {
   color: initial !important;
 }
 
+body {
+  background-color: rgb(255, 253, 203) !important
+}
+
 body :not(i){
-/*   font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", "Courier", monospace !important; */
-/*   font-family: monospace !important; */
+  /* font-family: "Fira Mono", "Consolas", "Menlo", "Monaco", "Courier", monospace !important; */
+  font-family: monospace !important;
 }
 
 a:hover, a:hover *, a:hover *:before,
@@ -83,12 +87,6 @@ button  *, .button  *, .button-primary  *, .button-tertiary  *,
 .button.active, .button-primary.active, .button-tertiary.active {
   border-bottom: none !important;
 }
-
-
-div.ui-tile__foot {
-  background: white !important;
-}
-
 
 
 .ui-body-title {
@@ -163,4 +161,11 @@ div.ui-tile__foot {
 
 #app-client-error, .error-message, .error-message p {
   font-family: monospace !important;
+}
+
+
+div.ui-tile__foot, .ui-thumbnail-privacy,
+.ui-thumbnail:hover,
+.ui-thumbnail-level-up-items, .ui-thumbnail-level-down-items {
+  background: white !important;
 }
