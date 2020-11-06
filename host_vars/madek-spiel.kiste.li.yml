@@ -1,0 +1,34 @@
+# hosting
+madek_external_hostname: madek-spiel.kiste.li
+
+# connection
+ansible_ssh_host: spiel1.ruby.zhdk.ch
+ansible_ssh_port: 22
+ansible_ssh_user: root
+
+# storage
+setup_storage_directories: true
+madek_storage_dir: /opt/madekdata
+madek_file_storage_dir: /opt/madekdata/originals
+madek_thumbnail_storage_dir: /opt/madekdata/thumbnails
+madek_tmp_dir: /opt/madekdata/tmp
+
+# audio and videos previews
+zencoder_enabled: false
+# zencoder_api_key: '{{zhdk_zencoder_api_key}}'
+# zencoder_test_mode: True
+
+# backups
+# db_backups_enabled: False
+
+# alpha feature, NOT for production! enable it by setting it to "on my own risk"
+madek_feature_toggle_admin_sql_reports: "on my own risk"
+# preview feature
+madek_graphql_api_preview_enabled: true
+
+# customize
+madek_webapp_html_extra_head_start: |
+  <!-- powered by Madek -->
+
+madek_webapp_html_extra_head_end: |
+  <link rel=stylesheet type=text/css href=/assets/local-theme.css>
